@@ -8,7 +8,7 @@
 5. Run ```./extract.sh``` to obtain all messages from AWS SQS Queue
 6. Run ```pip install pandas``` and ```pip install pycryptodome```.
 7. Run ```python clean.py``` to mask users' ip address and device id and obtain a new cleaned file called ```masked_user_logins.csv```.
-8. Press Ctrl + D to exit ```container1```.
+8. Press Ctrl + D to exit container1.
 9. Run ```docker exec priceless_blackwell sh -c 'echo "masked_user_logins.csv" > /shared-data/masked_user_logins.csv'``` to pass the cleaned file to the shared volume.
 10. Run ```docker exec -it <container2_name> /bin/bash``` to enter the bash window in container2.
 11. In container2, run ```psql -d postgres -U postgres -p 5432 -h localhost -W``` and enter password ```postgres```.
