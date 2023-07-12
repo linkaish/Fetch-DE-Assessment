@@ -28,13 +28,13 @@ to load the CSV file into database.
   2. Employ staging and production environments to test and deploy.
      
 ● What other components would you want to add to make this production ready?
-  Implement monitoring solutions to track the health and performance of the ETL application and set up alerts.
+  1. Implement monitoring solutions to track the health and performance of the ETL application and set up alerts.
   
 ● How can this application scale with a growing dataset.
-  We can automate the ETL application when new data come in and use Spark to handle high volume data.
+  1. We can automate the ETL application when new data come in and use Spark to handle high volume data.
   
 ● How can PII be recovered later on?
-  We can use the same encryption key to decrypt. I include a decrypting function in clean.py for reference.
+  1. We can use the same encryption key to decrypt. I include a decrypting function in clean.py for reference.
   
 ● What are the assumptions you made?
-  I assume we have a reliable data source and there is no conflict between the ETL and other applications.
+  1. I assume we have a reliable data source and there is no conflict between the ETL and other applications.
