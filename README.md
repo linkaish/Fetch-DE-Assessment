@@ -18,4 +18,5 @@ COPY user_logins(user_id, device_type, masked_ip, masked_device_id, locale, app_
 FROM '/shared-data/masked_user_logins.csv'
 DELIMITER ',' 
 CSV HEADER;
-``` to load the CSV file into database.
+```
+to load the CSV file into database.
